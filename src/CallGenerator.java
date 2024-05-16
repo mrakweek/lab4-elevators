@@ -13,7 +13,7 @@ class CallGenerator implements Runnable {
     @Override
     public void run() {
         while (true) {
-            int targetFloor = random.nextInt(building.getTotalFloors()) + 1; // Генерируем случайный этаж
+            int targetFloor = random.nextInt(building.getTotalFloors()) + 1;
             building.getElevatorController().addRequest(targetFloor);
             System.out.println("Сигнал вызова лифта на этаж " + targetFloor);
             try {

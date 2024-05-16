@@ -4,12 +4,12 @@ class Elevator {
 
     public Elevator(int id) {
         this.id = id;
-        this.currentFloor = 1; // Начальный этаж - 1
+        this.currentFloor = 1;
     }
 
     public void move(int targetFloor) {
         System.out.println("Лифт " + id + " движется с этажа " + currentFloor + " на этаж " + targetFloor);
-        currentFloor = targetFloor; // Обновляем текущий этаж
+        currentFloor = targetFloor;
     }
 
     public int getCurrentFloor() {
